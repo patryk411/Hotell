@@ -58,13 +58,12 @@
             <button class="main__services__content__single--btn btn">learn more</button>
            </div>
         </li>
-        
     </ul>
 </div>
 </section>
 
-        </div>
-    </section>
+</div>
+</section>
 
     <section class="main__aboutus py-5">
         <div class="container-fluid">
@@ -227,33 +226,34 @@
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
+                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" alt="First slide">
                             </div>
                         </div>
 
-                        <div class="carousel-inner d-none d-xl-block">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                            </div>
-                        </div>
-                        <div class="carousel-inner d-none d-xl-block">
-                            <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
+                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_2.jpg" alt="First slide">
                             </div>
                         </div>
 
-                        <div class="carousel-inner d-none d-xl-block">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
+                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_3.jpg" alt="First slide">
                             </div>
                         </div>
-                        <div class="carousel-inner d-none d-xl-block">
-                            <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                            </div>
-                        </div>
-                        
 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_4.jpg" alt="First slide">
+                            </div>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                
                     </div>
                   </div>
 

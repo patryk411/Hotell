@@ -23,14 +23,20 @@
     }
 
     &__content {
+
+
         .carousel {
             position: relative;
             margin-bottom: 100px;
+            transition-duration: 1s;
+
             .carousel-inner {
-                display: block;
+                display: flex;
                 flex-direction: row;         
                 height: 20%;
                 width: 20%;
+                // transform: translateX(0%);
+
                 .carousel-item {
                     img {
                         width: 100%;

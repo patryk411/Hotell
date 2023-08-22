@@ -24,88 +24,72 @@
 <div class="top-shadow"></div>
 
 <div class="subpage">
+<section class="main__services py-5">
 
-    <section class="subpage__services py-5 mb-5">
-    <div class="container">
-        <h2 class="section-heading">our services</h2>
-    </div>
+<div class="container">
+    <h2 class="section-heading py-5">our services</h2>
+</div>
 
-        <div class="subpage__services__content">
-            
-            <div id="carouselExampleInterval" class="carousel slide mb-5" data-bs-ride="carousel">
-                <div class="container-fluid">
-                    <div class="carousel-inner py-5">
+<div class="main__services__content">
 
-                          <div class="carousel-item active" data-bs-interval="1000">
-                              <div class="subpage__services__content__single">
-                                  <div class="subpage__services__content__single--icon">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trekking.png" class="" alt="...">
-                                </div>
-                                <h3 class="subpage__services__content__single--title">Lorem, ipsum dolor.</h3>
-                                <p class="subpage__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
-                                <button class="subpage__services__content__single--btn btn">learn more</button>
-                            </div>
-                        </div>
+<section class="splide" aria-label="Splide Basic HTML Example">
+  <div class="splide__track">
+		<ul class="splide__list">
 
-                          <div class="carousel-item active" data-bs-interval="2000">
-                              <div class="subpage__services__content__single">
-                                  <div class="subpage__services__content__single--icon">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/maps.png" class="" alt="...">
-                              </div>
-                              <h3 class="subpage__services__content__single--title">Lorem, ipsum dolor.</h3>
-                              <p class="subpage__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
-                              <button class="subpage__services__content__single--btn btn">learn more</button>
-                          </div>
-                          </div>
-
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <div class="subpage__services__content__single">
-                                <div class="subpage__services__content__single--icon">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/suitcases.png" class="" alt="...">
-                            </div>
-                            <h3 class="subpage__services__content__single--title">Lorem, ipsum dolor.</h3>
-                            <p class="subpage__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
-                            <button class="subpage__services__content__single--btn btn">learn more</button>
-                        </div>
-                        </div>
-
-                        <div class="carousel-item active" data-bs-interval="4000">
-                            <div class="subpage__services__content__single">
-                                <div class="subpage__services__content__single--icon">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/suitcases.png" class="" alt="...">
-                            </div>
-                            <h3 class="subpage__services__content__single--title">Lorem, ipsum dolor.</h3>
-                            <p class="subpage__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
-                            <button class="subpage__services__content__single--btn btn">learn more</button>
-                        </div>
-                        </div>
-
-                        <div class="carousel-item active" data-bs-interval="4000">
-                            <div class="subpage__services__content__single">
-                                <div class="subpage__services__content__single--icon">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/suitcases.png" class="" alt="...">
-                            </div>
-                            <h3 class="subpage__services__content__single--title">Lorem, ipsum dolor.</h3>
-                            <p class="subpage__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
-                            <button class="subpage__services__content__single--btn btn">learn more</button>
-                        </div>
-                        </div>
-
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Prev</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+			<li class="splide__slide">
+                
+            <div class="main__services__content__single">
+            <div class="main__services__content__single--icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trekking.png" class="" alt="...">
+            </div>
+            <h3 class="main__services__content__single--title">Lorem 1</h3>
+            <p class="main__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
+            <button class="main__services__content__single--btn btn">learn more</button>
             </div>
 
-    </div>
-    </section>
+            </li>
+			<li class="splide__slide">
+                
+            <div class="main__services__content__single">
+            <div class="main__services__content__single--icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trekking.png" class="" alt="...">
+            </div>
+            <h3 class="main__services__content__single--title">Lorem 2</h3>
+            <p class="main__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
+            <button class="main__services__content__single--btn btn">learn more</button>
+            </div>
+
+            </li>
+
+			<li class="splide__slide">
+            <div class="main__services__content__single">
+            <div class="main__services__content__single--icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trekking.png" class="" alt="...">
+            </div>
+            <h3 class="main__services__content__single--title">Lorem3 </h3>
+            <p class="main__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
+            <button class="main__services__content__single--btn btn">learn more</button>
+            </div>
+            </li>
+            
+			<li class="splide__slide">
+            <div class="main__services__content__single">
+            <div class="main__services__content__single--icon">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/trekking.png" class="" alt="...">
+            </div>
+            <h3 class="main__services__content__single--title">Lorem4</h3>
+            <p class="main__services__content__single--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed repellat, magni facere expedita laudantium nam odio harum alias suscipit quam.</p>
+            <button class="main__services__content__single--btn btn">learn more</button>
+           </div>
+        </li>
+    </ul>
+</div>
+</section>
+
+</div>
+</section>
+
+
 
     <section class="main__aboutus py-5">
     <div class="container-fluid">

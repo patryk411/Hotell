@@ -119,7 +119,7 @@
 
 
 
-<?php do_action('get_footer') ?>
+    <?php do_action('get_footer') ?>
     <?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php wp_footer() ?>
   </body>

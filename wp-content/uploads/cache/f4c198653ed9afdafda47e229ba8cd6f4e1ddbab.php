@@ -74,6 +74,10 @@
 
     <script src="https://kit.fontawesome.com/52989f7b96.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>
 //         const prevButton = document.querySelector(".carousel-control-prev");
 //         const nextButton = document.querySelector(".carousel-control-next");
@@ -183,34 +187,21 @@
 
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-// 	const nav = document.querySelector('.nav-primary')
-// 	const drpdwn = document.querySelector('.dropdown-menu')
+document.addEventListener('DOMContentLoaded', function () {
+	const nav = document.querySelector('.nav-primary')
+	const drpdwn = document.querySelector('.dropdown-menu')
 
-// 	function addShadow() {
-// 		if (window.scrollY >= 840) {
-// 			nav.classList.add('shadow-bg')
-// 		} else {
-// 			nav.classList.remove('shadow-bg')
-// 		}
-//         console.log(window.scrollY);
-// 	}
-
-
-// 	window.addEventListener('scroll', addShadow)
-// })
+	function addShadow() {
+		if (window.scrollY >= 840) {
+			nav.classList.add('shadow-bg')
+		} else {
+			nav.classList.remove('shadow-bg')
+		}
+	}
 
 
-var splide = new Splide( '.splide', {
-  type   : 'loop',
-  perPage: 3,
-  perMove: 1,
-} );
-
-splide.mount();
-
-
-
+	window.addEventListener('scroll', addShadow)
+})
 
 const navi = document.querySelector('.nav-mobile');
 const naviBtn = document.querySelector('.burger-btn');
@@ -220,6 +211,73 @@ const handleNav = () => {
 }
 
 naviBtn.addEventListener('click', handleNav)
+
+var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 3,
+  perMove: 1,
+  fixedHeight: true,
+  breakpoints: {
+    768: {
+      perPage: 2
+    },
+    576: {
+        perPage: 1
+    }
+  }
+  }
+);
+
+splide.mount();
+
+
+
+
+// const carousel = document.querySelector('.carousel');
+//     let shiftCount = 0;
+//     let direction = 1; // 1 oznacza przesuwanie w prawo, -1 oznacza przesuwanie w lewo
+
+//     function shiftCarousel() {
+//       if (direction === 1) {
+//         shiftCount++;
+//         carousel.style.transform = `translateX(-${shiftCount * 20}%)`;
+
+//         if (shiftCount === 5) {
+//           direction = -1;
+//         }
+//       } else {
+//         shiftCount--;
+//         carousel.style.transform = `translateX(-${shiftCount * 20}%)`;
+
+//         if (shiftCount === 0) {
+//           direction = 1;
+//         }
+//       }
+//     }
+
+//     setInterval(shiftCarousel, 3000, 1);
+
+
+$(document).ready(function () {
+    $('.main__socials__content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        mobileFirst: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }],
+
+    });
+})
+
+
 
 </script>
   </div>
