@@ -154,10 +154,10 @@
                 <h3 class="main__testimonitals--title col-lg-3">testimonitals</h3>
                 <p class="main__testimonitals--text col-lg-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis blanditiis ratione doloribus, laudantium sunt harum ea! Necessitatibus, obcaecati soluta. Vel fugiat eos ratione exercitationem.</p>
             </div>
-            <div class="main__testimonitals__content">
-                <div class="row m-0 p-0 d-flex justify-content-between">
 
-                <div class="card" style="">
+            
+
+                <!-- <div class="card" style="">
                     <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -169,41 +169,92 @@
                             <p class="position">Pozycja</p>
                         </div>
                     </div>
-                </div>
-                <div class="card d-none d-xl-block" style="">
-                    <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                    <div class="card-body">
+                </div> -->
+
+            <div class="main__testimonitals__boxes">
+                    
+                <div class="main__testimonitals__boxes__box">
+                    <div class="main__testimonitals__boxes__box__text">
+                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                    <div class="card-bottom">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="" alt="...">
-                            <div class="card-footer-text">
-                            <p class="name">Imie</p>
-                            <p class="position">Pozycja</p>
+                     <div class="main__testimonitals__boxes__box__img">
+                        <div class="row">
+
+                            <div class="main__testimonitals__boxes__box__img--img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
+                            </div>
+                            <div class="main__testimonitals__boxes__box__img--info">
+                                <p class="name">John Doe</p>
+                                <p class="position">Creative</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="card d-none d-xl-block" style="">
-                    <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                    <div class="card-body">
+
+                <div class="main__testimonitals__boxes__box">
+                    <div class="main__testimonitals__boxes__box__text">
+                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
-                    <div class="card-bottom">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="" alt="...">
-                            <div class="card-footer-text">
-                            <p class="name">Imie</p>
-                            <p class="position">Pozycja</p>
+                     <div class="main__testimonitals__boxes__box__img">
+                        <div class="row">
+
+                            <div class="main__testimonitals__boxes__box__img--img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
+                            </div>
+                            <div class="main__testimonitals__boxes__box__img--info">
+                                <p class="name">John Doe</p>
+                                <p class="position">Creative</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
- 
+
+                <div class="main__testimonitals__boxes__box">
+                    <div class="main__testimonitals__boxes__box__text">
+                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                     <div class="main__testimonitals__boxes__box__img">
+                        <div class="row">
+
+                            <div class="main__testimonitals__boxes__box__img--img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
+                            </div>
+                            <div class="main__testimonitals__boxes__box__img--info">
+                                <p class="name">John Doe</p>
+                                <p class="position">Creative</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main__testimonitals__boxes__box">
+                    <div class="main__testimonitals__boxes__box__text">
+                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                     <div class="main__testimonitals__boxes__box__img">
+                        <div class="row">
+
+                            <div class="main__testimonitals__boxes__box__img--img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
+                            </div>
+                            <div class="main__testimonitals__boxes__box__img--info">
+                                <p class="name">John Doe</p>
+                                <p class="position">Creative</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
             
-        </div>
-        <div class="main__testimonitals__content__testimonital-sec">
-                <button class="main__testimonitals__content__testimonital-sec--btn btn-prev">Prev</button>
-                <button class="main__testimonitals__content__testimonital-sec--btn btn-next">Next</button>
-        </div>
 
         </div>
     </section>
@@ -218,48 +269,61 @@
             </div>
         </div>
 
-        <div class="container-fluid m-0 p-0">
-            <div class="main__socials__content">
+        <div class="row m-0 p-0">
+            <div class="main__socials__boxes slick-slider">
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="row m-0 p-0">
 
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" alt="First slide">
-                            </div>
-                        </div>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_2.jpg" alt="First slide">
-                            </div>
-                        </div>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_3.jpg" alt="First slide">
-                            </div>
-                        </div>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                    <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_4.jpg" alt="First slide">
-                            </div>
-                        </div>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" alt="First slide">
-                            </div>
-                        </div>
-                
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" class="card-img-top" alt="...">                
                     </div>
-                  </div>
-
                 </div>
 
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_2.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_3.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_4.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_2.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_3.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_4.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </section>
 
     

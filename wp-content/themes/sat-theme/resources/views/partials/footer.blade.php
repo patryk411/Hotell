@@ -78,6 +78,62 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+
+    $(document).ready(function () {
+    $('.slick-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        mobileFirst: true,
+        responsive: [{
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1
+            },
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1
+            }
+        }],
+    });
+    });
+
+    $(document).ready(function () {
+    $('.main__testimonitals__boxes').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        mobileFirst: true,
+        responsive: [{
+            breakpoint: 1000,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            },
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            },
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            },
+        }],
+
+    });
+})
+
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script><script>
 //         const prevButton = document.querySelector(".carousel-control-prev");
 //         const nextButton = document.querySelector(".carousel-control-next");
@@ -256,27 +312,6 @@ splide.mount();
 //     }
 
 //     setInterval(shiftCarousel, 3000, 1);
-
-
-$(document).ready(function () {
-    $('.main__socials__content').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        arrows: false,
-        mobileFirst: true,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }],
-
-    });
-})
-
 
 
 </script>

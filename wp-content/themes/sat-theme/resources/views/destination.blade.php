@@ -73,47 +73,60 @@
         </div>
     </div>
 
-    <div class="container-fluid m-0 p-0">
-        <div class="main__socials__content">
+    <div class="row m-0 p-0">
+            <div class="main__socials__boxes slick-slider">
 
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="row m-0 p-0">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                        </div>
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" class="card-img-top" alt="...">                
                     </div>
-
-                    <div class="carousel-inner d-none d-xl-block">
-                        <div class="carousel-item active">
-                            <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                        </div>
-                    </div>
-                    <div class="carousel-inner d-none d-xl-block">
-                        <div class="carousel-item active">
-                            <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                        </div>
-                    </div>
-
-                    <div class="carousel-inner d-none d-xl-block">
-                        <div class="carousel-item active">
-                            <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                        </div>
-                    </div>
-                    <div class="carousel-inner d-none d-xl-block">
-                        <div class="carousel-item active">
-                            <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" alt="First slide">
-                        </div>
-                    </div>
-                    
-
                 </div>
-              </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_2.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_3.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_4.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_2.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_1.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_3.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
+
+                <div class="main__socials__boxes__box">
+                    <div class="main__socials__boxes__box--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/img_4.jpg" class="card-img-top" alt="...">                
+                    </div>
+                </div>
 
             </div>
-
-    </div>
+        </div>
+    
 </section>
 </div>
 
