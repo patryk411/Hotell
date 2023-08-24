@@ -13,8 +13,8 @@
   <img style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['url'] ?>);"/>
       <div class="section-banner__text">
         <div class="container">
-          <h1 class="section-banner__text--heading"><?php the_title(); ?></h1>
-          <p class="section-banner__text--text"><?php the_content(); ?></p>
+          <h1 class="section-banner__text--heading" data-aos="fade-up" data-aos-duration="800"><?php the_title(); ?></h1>
+          <p class="section-banner__text--text" data-aos="fade-up" data-aos-duration="800"><?php the_content(); ?></p>
         </div>
       </div>
       <div class="section-banner__shadow"></div>
@@ -27,10 +27,10 @@
 <section class="main__services py-5">
 
 <div class="container">
-    <h2 class="section-heading py-5">our services</h2>
+    <h2 class="section-heading py-5" data-aos="fade-up" data-aos-duration="800">our services</h2>
 </div>
 
-<div class="main__services__content">
+<div class="main__services__content" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
 
 <section class="splide" aria-label="Splide Basic HTML Example">
   <div class="splide__track">
@@ -98,12 +98,12 @@
 
                 <div class="main__aboutus__content__bg"></div>
 
-                  <div class="main__aboutus__content__img col-sm-12 col-md-12 col-lg-5">
+                  <div class="main__aboutus__content__img col-sm-12 col-md-12 col-lg-5" data-aos="fade-right" data-aos-duration="800">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="" alt="...">
                     </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-3"></div>
-                <div class="main__aboutus__content__right col-sm-12  col-md-12 col-lg-4">
+                <div class="main__aboutus__content__right col-sm-12  col-md-12 col-lg-4" data-aos="fade-up" data-aos-duration="800">
                     <h3 class="main__aboutus__content__right--title">about hotel</h3>
                     <p class="main__aboutus__content__right--text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus adipisci rem ex! Perferendis voluptatibus, at eligendi ab provident vitae minima similique, saepe adipisci, deleniti illo a. </p>
                     <p class="main__aboutus__content__right--text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus adipisci rem ex! Perferendis voluptatibus, at eligendi ab provident vitae minima similique, saepe adipisci, deleniti illo a. </p>

@@ -27,13 +27,13 @@
 
   <section class="subpage__contact py-5">
     <div class="container">
-      <h2 class="subpage__contact--heading">get in touch</h2>
-      <p class="subpage__contact--text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      <h2 class="subpage__contact--heading" data-aos="fade-up" data-aos-duration="800">get in touch</h2>
+      <p class="subpage__contact--text" data-aos="fade-up" data-aos-duration="800">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
       
       <div class="subpage__contact__content">
         <div class="row m-0 p-0 d-flex justify-content-between">
 
-        <form action="" class="subpage__contact__content__form col-md-6 col-lg-6 m-0 p-0">
+        <form action="" class="subpage__contact__content__form col-md-6 col-lg-6 m-0 p-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
           <div class="row">
 
             
@@ -55,7 +55,7 @@
           </div>
         </form>
 
-        <div class="subpage__contact__content__right col-md-6 col-lg-5">
+        <div class="subpage__contact__content__right col-md-6 col-lg-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
           <div class="row m-0 p-0">
 
             <div class="subpage__contact__content__right__contact col-sm-6 col-md-12 col-lg-6">

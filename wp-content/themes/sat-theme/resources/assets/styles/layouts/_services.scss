@@ -4,6 +4,7 @@
     margin: 0 100px;
     .section-heading {
         @include title-section;
+        margin: 0 -100px;
     }
     &__content {
         width: 100%;

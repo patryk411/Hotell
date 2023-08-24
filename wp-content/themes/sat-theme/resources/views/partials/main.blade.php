@@ -3,10 +3,10 @@
 <section class="main__services py-5">
 
 <div class="container">
-    <h2 class="section-heading">our services</h2>
+    <h2 class="section-heading" data-aos="fade-up" data-aos-duration="800">our services</h2>
 </div>
 
-<div class="main__services__content">
+<div class="main__services__content" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
 
 <section class="splide" aria-label="Splide Basic HTML Example">
   <div class="splide__track">
@@ -72,12 +72,12 @@
 
                     <div class="main__aboutus__content__bg"></div>
 
-                      <div class="main__aboutus__content__img col-sm-12 col-md-12 col-lg-5">
+                      <div class="main__aboutus__content__img col-sm-12 col-md-12 col-lg-5" data-aos="fade-right" data-aos-duration="800">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="" alt="...">
                         </div>
 
                     <div class="col-sm-12 col-md-12 col-lg-3"></div>
-                    <div class="main__aboutus__content__right col-sm-12  col-md-12 col-lg-4">
+                    <div class="main__aboutus__content__right col-sm-12  col-md-12 col-lg-4" data-aos="fade-up" data-aos-duration="800">
                         <h3 class="main__aboutus__content__right--title">about hotel</h3>
                         <p class="main__aboutus__content__right--text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus adipisci rem ex! Perferendis voluptatibus, at eligendi ab provident vitae minima similique, saepe adipisci, deleniti illo a. </p>
                         <p class="main__aboutus__content__right--text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus adipisci rem ex! Perferendis voluptatibus, at eligendi ab provident vitae minima similique, saepe adipisci, deleniti illo a. </p>
@@ -90,39 +90,35 @@
 
     <section class="main__blog-post py-5">
         <div class="container">
-            <h3 class="main__blog-post--heading">blog posts</h3>
-            <div class="main__blog-post__content">
-                <div class="row d-flex justify-content-between m-0 p-0">
+            <h3 class="main__blog-post--heading"  data-aos="fade-up" data-aos-duration="800">blog posts</h3>
 
-                    <div class="card" style="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="card-img-top" alt="...">
+            <div class="main__blog-post__boxes slider-blog" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+
+                <?php
+            
+                    $islandsPost = new WP_Query(array(
+                    'posts_per_page' => 4,
+                    'post_type' => 'islands'
+                    ));
+                    
+                    while($islandsPost->have_posts()) {
+                    $islandsPost->the_post(); ?>
+
+                    <div class="card">
+                    <img src="<?php $testimonitalImg = get_field('island_img'); echo $testimonitalImg['url'] ?>" class="" alt="...">
                         <a class="blog-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-pencil"></i></button></a>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text"><?php the_field('island_text') ?></p>
                             <a href="#" class="card-btn">read more</a>
                         </div>
-                    </div>
+                    </div> 
+
+
+                <?php }
+                 ?>
+            
                     
-                    <div class="card d-none d-xl-block" style="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="card-img-top" alt="...">
-                    <a class="blog-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-pencil"></i></button></a>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-btn">read more</a>
-                        </div>
-                </div>
-                
-                <div class="card d-none d-xl-block" style="">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="card-img-top" alt="...">
-                <a class="blog-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-pencil"></i></button></a>
-                <div class="card-body">
 
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-btn">read more</a>
-                    </div>
-                </div>
-
-                </div>
             </div>
         </div>            
     </section>
@@ -134,7 +130,7 @@
                     
                     <div class="main__faqs__content__left col-lg-3">
                         <h3 class="main__faqs__content__left--heading">
-                            Lorem, ipsum dolor.
+                            FREQUENTLY ASKED QUESTIONS
                         </h3>
                     </div>
                     <div class="col-lg-1"></div>
@@ -156,105 +152,44 @@
             </div>
 
             
+                    
+                <div class="main__testimonitals__boxes">
 
-                <!-- <div class="card" style="">
-                    <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <div class="card-bottom">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="" alt="...">
-                            <div class="card-footer-text">
-                            <p class="name">Imie</p>
-                            <p class="position">Pozycja</p>
-                        </div>
-                    </div>
-                </div> -->
+                <?php
+        
+        $testimonitalsCards = new WP_Query(array(
+          'posts_per_page' => 4,
+          'post_type' => 'testimonitals'
+        ));
+        
+        while($testimonitalsCards->have_posts()) {
+          $testimonitalsCards->the_post(); ?>
 
-            <div class="main__testimonitals__boxes">
                     
                 <div class="main__testimonitals__boxes__box">
                     <div class="main__testimonitals__boxes__box__text">
                         <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text"><?php the_field('testimonitals_text'); ?></p>
                     </div>
                      <div class="main__testimonitals__boxes__box__img">
                         <div class="row">
 
                             <div class="main__testimonitals__boxes__box__img--img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
+                            <img src="<?php $testimonitalImg = get_field('testimonital_thumbnail'); echo $testimonitalImg['url'] ?>" class="" alt="...">
                             </div>
                             <div class="main__testimonitals__boxes__box__img--info">
-                                <p class="name">John Doe</p>
-                                <p class="position">Creative</p>
+                                <p class="name"><?php the_field('testimonital_name'); ?></p>
+                                <p class="position"><?php the_field('testimonital_position'); ?></p>
                             </div>
 
                         </div>
                     </div>
-                </div>
-
-                <div class="main__testimonitals__boxes__box">
-                    <div class="main__testimonitals__boxes__box__text">
-                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                     <div class="main__testimonitals__boxes__box__img">
-                        <div class="row">
-
-                            <div class="main__testimonitals__boxes__box__img--img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
-                            </div>
-                            <div class="main__testimonitals__boxes__box__img--info">
-                                <p class="name">John Doe</p>
-                                <p class="position">Creative</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="main__testimonitals__boxes__box">
-                    <div class="main__testimonitals__boxes__box__text">
-                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                     <div class="main__testimonitals__boxes__box__img">
-                        <div class="row">
-
-                            <div class="main__testimonitals__boxes__box__img--img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
-                            </div>
-                            <div class="main__testimonitals__boxes__box__img--info">
-                                <p class="name">John Doe</p>
-                                <p class="position">Creative</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                </div>             
                 
-                <div class="main__testimonitals__boxes__box">
-                    <div class="main__testimonitals__boxes__box__text">
-                        <a class="testimonitals-btn" href="#"><button class="blog-pencil"><i class="fa-solid fa-quote-left"></i></button></a>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                     <div class="main__testimonitals__boxes__box__img">
-                        <div class="row">
-
-                            <div class="main__testimonitals__boxes__box__img--img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/person_2.jpg" class="" alt="...">
-                            </div>
-                            <div class="main__testimonitals__boxes__box__img--info">
-                                <p class="name">John Doe</p>
-                                <p class="position">Creative</p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+                <?php }
+           ?>
             
+        </div>
 
         </div>
     </section>

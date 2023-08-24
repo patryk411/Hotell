@@ -25,19 +25,19 @@
 
 <div class="subpage">
 
-  <section class="main__aboutus py-5">
+<section class="main__aboutus py-5">
     <div class="container-fluid">
         <div class="main__aboutus__content">
             <div class="row m-0 p-0 d-flex justify-content-between">
 
                 <div class="main__aboutus__content__bg"></div>
 
-                  <div class="main__aboutus__content__img col-sm-12 col-md-12 col-lg-5">
+                  <div class="main__aboutus__content__img col-sm-12 col-md-12 col-lg-5" data-aos="fade-right" data-aos-duration="800">
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-sec.jpg" class="" alt="...">
                     </div>
 
                 <div class="col-sm-12 col-md-12 col-lg-3"></div>
-                <div class="main__aboutus__content__right col-sm-12  col-md-12 col-lg-4">
+                <div class="main__aboutus__content__right col-sm-12  col-md-12 col-lg-4" data-aos="fade-up" data-aos-duration="800">
                     <h3 class="main__aboutus__content__right--title">History</h3>
                     <p class="main__aboutus__content__right--text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus adipisci rem ex! Perferendis voluptatibus, at eligendi ab provident vitae minima similique, saepe adipisci, deleniti illo a. </p>
                     <p class="main__aboutus__content__right--text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus adipisci rem ex! Perferendis voluptatibus, at eligendi ab provident vitae minima similique, saepe adipisci, deleniti illo a. </p>
@@ -51,59 +51,50 @@
 <section class="subpage__testimonitals">
   <div class="container-fluid">
       <div class="row m-0 p-0">
-          <h3 class="subpage__testimonitals--title col-lg-3">who we are</h3>
-          <p class="subpage__testimonitals--text col-lg-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis blanditiis ratione doloribus, laudantium sunt harum ea! Necessitatibus, obcaecati soluta. Vel fugiat eos ratione exercitationem.</p>
+          <h3 class="subpage__testimonitals--title col-lg-3" data-aos="fade-right" data-aos-duration="800">who we are</h3>
+          <p class="subpage__testimonitals--text col-lg-9" data-aos="fade-up" data-aos-duration="800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis blanditiis ratione doloribus, laudantium sunt harum ea! Necessitatibus, obcaecati soluta. Vel fugiat eos ratione exercitationem.</p>
       </div>
-      <div class="subpage__testimonitals__content">
-          <div class="row m-0 p-0">
+
+      <div class="subpage__testimonitals__boxes slider-aboutpage" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
 
           <?php
         
         $subpageOffer = new WP_Query(array(
-          'posts_per_page' => 3,
+          'posts_per_page' => 4,
           'post_type' => 'team'
         ));
         
         while($subpageOffer->have_posts()) {
           $subpageOffer->the_post(); ?>
-       
-       <div class="card">
-            <div class="card-body">
 
-              <div class="card-img">
-                <img src="<?php $teamImg = get_field('team_img'); echo $teamImg['url'] ?>" class="" alt="...">
-              </div>
+        <div class="subpage__testimonitals__boxes__box">
 
-              <div class="card-info">
-                <h3 class="name"><?php the_field('team_name') ?></h3>
-                <p class="position"><?php the_field('team_position') ?></p>
-              </div>
+                     <div class="subpage__testimonitals__boxes__box__img">
+                        <div class="subpage__testimonitals__boxes__box__img--img">
+                            <img src="<?php $teamImg = get_field('team_img'); echo $teamImg['url'] ?>" class="" alt="...">
+                        </div>
+                        <div class="subpage__testimonitals__boxes__box__img--info">
+                            <p class="name"><?php the_field('team_name') ?></p>
+                            <p class="position"><?php the_field('team_position') ?></p>
+                        </div>
+                    </div>
 
-              <div class="card-text">
-                <p><?php the_field('team_text') ?></p>
-              </div>
-
-              <button class="main__services__content__single--btn btn">learn more</button>
-
-            </div>
-          </div>
+                    <div class="subpage__testimonitals__boxes__box__text">
+                        <p class="card-text"><?php the_field('team_text') ?></p>
+                    </div>
+                    <button class="main__services__content__single--btn btn">learn more</button>
+                </div>
        
             <?php }
            ?>
-
-      </div>
       
-  </div>
-  <div class="subpage__testimonitals__content__testimonital-sec">
-          <button class="subpage__testimonitals__content__testimonital-sec--btn btn-prev">Prev</button>
-          <button class="subpage__testimonitals__content__testimonital-sec--btn btn-next">Next</button>
   </div>
 
   </div>
 </section>
 
 
-    <section class="main__socials py-5">
+<section class="main__socials py-5">
         <div class="container">
 
             <div class="main__socials__text-box">

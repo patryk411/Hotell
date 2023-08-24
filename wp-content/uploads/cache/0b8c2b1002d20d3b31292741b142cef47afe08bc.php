@@ -13,8 +13,8 @@
   <img style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['url'] ?>);"/>
       <div class="section-banner__text">
         <div class="container">
-          <h1 class="section-banner__text--heading">Popular Places</h1>
-          <button class="btn-section btn-outline">See video</button>
+          <h1 class="section-banner__text--heading" data-aos="fade-up" data-aos-duration="800">Popular Places</h1>
+          <button class="btn-section btn-outline" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">See video</button>
         </div>
       </div>
       <div class="section-banner__shadow"></div>
